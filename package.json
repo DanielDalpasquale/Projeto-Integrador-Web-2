@@ -1,0 +1,19 @@
+{
+  "name": "pi-web-2",
+  "version": "1.0.0",
+  "description": "Projeto integrador web 2 , trabalho para ser avaliado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielDalpasquale/Projeto-Integrador-Web-2.git"
+  },
+  "author": "Daniel Dalpasquale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielDalpasquale/Projeto-Integrador-Web-2/issues"
+  },
+  "homepage": "https://github.com/DanielDalpasquale/Projeto-Integrador-Web-2#readme"
+}
