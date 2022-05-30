@@ -15,11 +15,6 @@ mongoose.connect(db_mongoose.connection,{useUnifiedTopology:true,useNewUrlParse:
         console.log('erro');
 });
 
-/*  ROTAS
-app.get();
-app.post();
-
-*/
 
 app.listen(8081,function(){
     console.log("Servidor em http://localhost:8081")
