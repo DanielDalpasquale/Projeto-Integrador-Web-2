@@ -17,14 +17,14 @@ mongoose.connect(db_mongoose.connection,{useUnifiedTopology:true,useNewUrlParse:
 
 
 app.listen(8081,function(){
-    console.log("Servidor em http://localhost:8081")
-}):
+    console.log("Servidor em http://localhost:8081");
+});
 
 
 // CRUD New Usuario
 
 new Usuario({
-    cpf:07828590970,
+    cpf:12345678970,
     nome:'Daniel',
     tipo:'ADM'
 });
