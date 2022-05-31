@@ -1,0 +1,44 @@
+<h1> Listar Creches </h1>
+<table  class="table table-striped">
+<thead  class="thead-dark">
+    <tr>
+        <th scope="col"> Nome </th>
+        <th scope="col"> Endereços</th>
+        <th scope="col"> Numero</th>
+        <th scope="col"> Imagem</th>
+        <th scope="col"> Editar</th>
+        <th scope="col"> Deletar</th>
+    </tr>
+</thead>
+<tbody>
+    {{#each creche}}
+    <tr>
+        <th scope="row">{{nome}}</th>
+        <td>{{endereco}}</td>
+        <td>{{numero}}</td>
+        <td>
+            <image width="50px" height="50px" src="uploads/{{imagem}}">
+        </td>
+        <td><a href="crecheEdit/{{_id}}"> <button class="btn btn-dark">Editar</button> </a></td>
+        <td><a href="crecheDelete/{{_id}}"> <button class="btn btn-dark">Deletar</button> </a></td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>
+
+<div class="container">
+    <div class="row">
+        {{#each creche}}
+        <div class="col-6 col-md-3">
+            <div class="card">
+                <img class="card-img-top" height="150px" src="uploads/{{imagem}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{nome}}</h5>
+                    <a href="crecheEdit/{{_id}}"><button class="btn btn-dark">Editar</button></a>
+                    <a href="crecheDelete/{{_id}}"> <button class="btn btn-dark">Deletar</button></a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

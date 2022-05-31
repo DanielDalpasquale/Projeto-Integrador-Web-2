@@ -1,0 +1,21 @@
+<h1> Editar Creche </h1>
+<form action="/crecheEdit" method="POST"  enctype="multipart/form-data">
+    <input type="hidden" name="id" value="{{creche._id}}">
+    <div class="form-group">
+        <label for="campoNome">Nome</label>
+        <input type="text" class="form-control" id="campoNome" name="nome"  value="{{creche.nome}}">
+    </div>
+    <div class="form-group">
+                <label for="campoEndereco">Endereço</label>
+                <input type="text" class="form-control" id="campoEndereco" name="endereco" value="{{creche.endereco}}">
+        </div>
+        <div class="form-group">
+                <label for="campoNumero">Numero</label>
+                <input type="number" class="form-control" id="campoNumero" name="numero" value="{{creche.numero}}">
+        </div>
+        <div class="form-group">
+                <label for="campoImagem">Imagem</label>
+                <input type="file" class="form-control" id="campoImagem" name="imagem">
+        </div>
+    <button type="submit" class="btn btn-dark">Editar</button>
+</form>

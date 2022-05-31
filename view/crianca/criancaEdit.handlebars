@@ -1,0 +1,25 @@
+<h1> Editar Dados De Criança </h1>
+<form action="/receitaEdit" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{{crianca._id}}">
+        <div class="form-group">
+                <label for="campoNome">Nome</label>
+                <input type="text" class="form-control" id="campoNome" name="nome" value="{{crianca.nome}}">
+        </div>
+        <div class="form-group">
+                <label for="campoIdade">Idade</label>
+                <input type="number" class="form-control" id="campoIdade" name="Idade" value="{{crianca.idade}}">
+        </div>
+        <div class="form-group">
+                <label for="campoEndereco">Endereço</label>
+                <input type="text" class="form-control" id="campoEndereco" name="endereco" value="{{crianca.endereco}}">
+        </div>
+        <div class="form-group">
+                <label for="campoNumero">Numero</label>
+                <input type="number" class="form-control" id="campoNumero" name="numero" value="{{crianca.numero}}">
+        </div>
+        <div class="form-group">
+                <label for="campoImagem">Imagem</label>
+                <input type="file" class="form-control" id="campoImagem" name="imagem">
+        </div>
+        <button type="submit" class="btn btn-dark">Editar</button>
+</form>
